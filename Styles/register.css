@@ -1,0 +1,11 @@
+main{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: grey;
+}
+
+.register-form{
+    margin: 20px 25px;
+    background-color: white;
+}
