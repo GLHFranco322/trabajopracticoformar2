@@ -1,7 +1,6 @@
 /* Main */
 
 main {
-    width: 100%;
     background-color: #ebebeb;
     text-align: center;
     display: flex;
@@ -32,6 +31,7 @@ h2{
         text-align: left;
         font-weight: bold;
         .parrafos{
+            max-width: 100%;
             display: flex;
         }
     }

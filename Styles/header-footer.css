@@ -13,6 +13,7 @@ header {
     background-color: #EAC926;
     color: black;
     padding-bottom: 10px;
+
     a {
         color: black;
         text-decoration: none;
@@ -22,20 +23,21 @@ header {
         padding: 10px 0;
         list-style: none;
     }
-    
-    nav{
+
+    nav {
         display: none;
     }
 }
 
-.header-top{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    .logo-img{
+.header-top {
+    display: flex;
+    justify-content: space-between;
+
+    .logo-img {
         padding-top: 25px;
     }
-    .barra-de-busqueda-con-icono{
+
+    .barra-de-busqueda-con-icono {
         padding-top: 40px;
         display: flex;
         padding-right: 30px;
@@ -65,7 +67,8 @@ header .icono-busqueda button {
     border: none;
     background-color: white;
     color: grey;
-    :hover{
+
+    :hover {
         color: black;
     }
 }
@@ -73,9 +76,9 @@ header .icono-busqueda button {
 header .icono-busqueda {
     display: inline-block;
     vertical-align: middle;
-    position: absolute;
-    top: 42px;
-    right: 35px;
+    position: relative;
+    right: 20px;
+    top: 1px;
 }
 
 header .compra-en-cuotas {
@@ -101,56 +104,77 @@ header .burger-menu {
 }
 
 @media (min-width: 769px) {
-    header{
+    header {
+        .header-top{
+            display: flex;
+            justify-content: space-between;
+        }
         .burger-menu {
             display: none;
-    }
-    nav{
-        display: flex;
-        justify-content: space-around;
-        ul{
+        }
+
+        nav {
             display: flex;
-            a{
-                padding: 10px;
+            justify-content: space-around;
+
+            ul {
+                display: flex;
+
+                a {
+                    padding: 10px;
+                }
             }
         }
-    }
+
+        .icono-busqueda {
+            display: inline-block;
+            vertical-align: middle;
+            position: inherit;
+            margin-left: 10px;
+            margin-top: 1px;
+        }
+
+        .barra-de-busqueda-con-icono {
+            label {
+                button {
+                    border: solid;
+                    border-radius: 5px;
+                }
+            }
+        }
     }
 }
 
 /* Footer */
 
-footer{
+footer {
     padding: 25px;
 }
 
-footer .section-footer{
+footer .section-footer {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
     gap: 20px;
+    padding-bottom: 25px;
 }
 
-footer .article-footer{
+footer .article-footer {
     max-width: 300px;
     margin: 10px;
 }
 
-footer i{
+footer i {
     font-size: 30px;
     color: #1259c3;
 }
 
-footer p{
+footer p {
     font-size: 16px;
 }
 
-footer h4{
+footer h4 {
     font-size: 18px;
-}
-
-footer article:last-child{
-    padding-bottom: 20px;
 }
