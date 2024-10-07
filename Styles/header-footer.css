@@ -22,6 +22,24 @@ header {
         padding: 10px 0;
         list-style: none;
     }
+    
+    nav{
+        display: none;
+    }
+}
+
+.header-top{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    .logo-img{
+        padding-top: 25px;
+    }
+    .barra-de-busqueda-con-icono{
+        padding-top: 40px;
+        display: flex;
+        padding-right: 30px;
+    }
 }
 
 header .icon {
@@ -42,25 +60,28 @@ header .barra-de-busqueda {
 }
 
 header .icono-busqueda button {
-    border-radius: 50% black;
     padding: 2px;
     cursor: pointer;
-}
-
-header .icono-busqueda svg {
-    height: 20px;
-    width: 20px;
-    fill: #000;
+    border: none;
+    background-color: white;
+    color: grey;
+    :hover{
+        color: black;
+    }
 }
 
 header .icono-busqueda {
     display: inline-block;
     vertical-align: middle;
+    position: absolute;
+    top: 42px;
+    right: 35px;
 }
 
 header .compra-en-cuotas {
     display: flex;
     justify-content: center;
+    padding: 20px;
 }
 
 header .burger-menu {
@@ -80,8 +101,20 @@ header .burger-menu {
 }
 
 @media (min-width: 769px) {
-    header .burger-menu {
-        display: none;
+    header{
+        .burger-menu {
+            display: none;
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+        ul{
+            display: flex;
+            a{
+                padding: 10px;
+            }
+        }
+    }
     }
 }
 
