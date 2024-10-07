@@ -10,7 +10,7 @@ main {
     padding-bottom: 25px;
 }
 
-h2{
+h2 {
     padding: 20px;
 }
 
@@ -22,22 +22,32 @@ h2{
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     cursor: pointer;
+
     /* background-color: red; */
-    .descripciones{
+    .descripciones {
         margin: 0 auto;
         width: 100%;
         margin-top: 10px;
         position: relative;
         text-align: left;
         font-weight: bold;
-        .parrafos{
+
+        .parrafos {
             max-width: 100%;
             display: flex;
+        }
+
+        .descripcion {
+            display: none;
+        }
+
+        &:hover .descripcion{
+            display: block;
         }
     }
 }
 
-.fa-truck{
+.fa-truck {
     color: #39b54a;
     border: solid #39b54a;
     padding: 8px 6px;
@@ -60,23 +70,23 @@ h2{
     width: 100%;
 }
 
-.precio{
+.precio {
     font-size: 18px;
 }
 
-.descuento{
+.descuento {
     font-size: 16px;
     color: #39b54a;
 }
 
-.descripcion{
+.descripcion {
     font-size: 16px;
 }
 
 @media (min-width: 769px) {
-main{
-    text-align: left;
-}
+    main {
+        text-align: left;
+    }
 
     .articulos-general {
         display: flex;
@@ -87,6 +97,6 @@ main{
 
     .articulos-main {
         width: calc(25% - 20px);
-        margin: 10px; 
+        margin: 10px;
     }
 }
