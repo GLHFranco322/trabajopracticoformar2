@@ -32,14 +32,18 @@ header {
 .header-top {
     display: flex;
     justify-content: space-between;
-
+    flex-wrap: wrap;
+    align-items: center;
+    align-self: center;
     .logo-img {
         padding-top: 25px;
     }
 
     .barra-de-busqueda-con-icono {
-        padding-top: 40px;
+        align-items: center;
+        justify-content: center; /* Centra horizontalmente */
         display: flex;
+        height: 100px; /* Ajusta el alto según lo necesites */
         padding-right: 30px;
     }
 }

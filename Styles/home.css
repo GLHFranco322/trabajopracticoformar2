@@ -22,7 +22,6 @@ h2 {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     cursor: pointer;
-    /* background-color: red; */
     .descripciones {
         margin: 0 auto;
         width: 100%;
@@ -30,7 +29,7 @@ h2 {
         position: relative;
         text-align: left;
         font-weight: bold;
-
+        border-top: 2px solid #ebebeb;
         .parrafos {
             max-width: 100%;
             display: flex;
@@ -40,7 +39,7 @@ h2 {
             display: none;
         }
 
-        &:hover .descripcion{
+        &:hover .descripcion {
             display: block;
         }
     }
